@@ -4,19 +4,44 @@
 	<head>
 		<title> Home </title>
 		<link rel = 'stylesheet' href = 'style.css'>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 	</head>
 
-<body>
+<body style = 'background-color: rgb(77, 85, 94);'>
 
-	<div class = 'topnav'>
-		<a href = ''> Log in </a> 
-	</div>
+	<!-- The navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand h1" href="#">Anatomy Explorer</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
 
-	<div class = 'center-container colored-container'>
-		<h1> Medical Quizzing Tools </h1>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Contacts</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#">Achievements</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link active" href="#">Log in</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
 
-		<div class = 'reveal'>
-			<img class = 'big-preview image' src = 'https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg'/>
+	<div class = 'center-container'>
+
+		<div class = 'reveal' style = 'margin-top: 30px'>
+			<img class = 'big-preview' src = 'https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg' style = 'float: left;'/>
 
 			<div class = 'image-description'> 
 				<h1> Peel the body layer by layer! </h1>
@@ -26,57 +51,50 @@
 				</p>
 			</div>
 			
-		</div>
-
-		<div id ='wrapper' class = 'reveal' style = 'clear: both'>
-			<div style = 'width: 1300px; margin: auto'>
-				<div class = 'small-preview-container'>
-					<img class = 'small-preview image' src = 'https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg'/>
-
-					<div> 
-						<h3> Timed Quiz </h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed cursus libero. Phasellus eget dolor sed nisl rhoncus aliquet at vitae urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius tortor sed facilisis tempus.
-
-						</p>
-					</div>
-					
-				</div>
-
-				<div class = 'small-preview-container'>
-					<img class = 'small-preview image' src = 'https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg'/>
-
-					<div> 
-						<h3> Challenge Quiz </h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed cursus libero. Phasellus eget dolor sed nisl rhoncus aliquet at vitae urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius tortor sed facilisis tempus.
-
-						</p>
-					</div>
-					
-				</div>
-
-				<div class = 'small-preview-container'>
-					<img class = 'small-preview image' src = 'https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg'/>
-
-					<div> 
-						<h3> Scenario Challenges </h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed cursus libero. Phasellus eget dolor sed nisl rhoncus aliquet at vitae urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius tortor sed facilisis tempus.
-
-						</p>
-					</div>
-					
-				</div>
+		<div class="container my-5" style = 'clear:both'>
+			<div class="row">
+			  <div class="col-md-3">
+			    <div class="card bg-dark text-white">
+			      <img src="https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg" class="card-img-top" alt="Card image 1">
+			      <div class="card-body">
+			        <h5 class="card-title">Card 1</h5>
+			        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-md-3">
+			    <div class="card bg-dark text-white">
+			      <img src="https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg" class="card-img-top" alt="Card image 1">
+			      <div class="card-body">
+			        <h5 class="card-title">Card 1</h5>
+			        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-md-3">
+			    <div class="card bg-dark text-white">
+			      <img src="https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg" class="card-img-top" alt="Card image 1">
+			      <div class="card-body">
+			        <h5 class="card-title">Card 1</h5>
+			        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-md-3">
+			    <div class="card bg-dark text-white">
+			      <img src="https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg" class="card-img-top" alt="Card image 1">
+			      <div class="card-body">
+			        <h5 class="card-title">Card 1</h5>
+			        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			      </div>
+			    </div>
+			  </div>
 			</div>
 		</div>
 
-	</div>
+		</div>
 
-	<div class = 'footer' style = 'clear: both;'>
-
-		<p> </p>
-
+		</div>
 	</div>
 
 	<script src="script.js"></script>
