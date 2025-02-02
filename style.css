@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+	margin: 0px;
+	font-family: 'Roboto';
+
+	background: linear-gradient(180deg, rgb(135, 161, 164) 52%, rgb(244, 234, 215) 50%);	
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #475d9e;
+	color: white;
+	text-align: center;
+
+    
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+.small-preview-container {
+    width: 400px;
+    float:left; 
+}
+
+.image{ 
+    float: left;
+    border-radius: 10px;
+}
+
+.image-description{
+	width: 750px;
+	float: left;
+}
+
+.big-preview{
+	width: 400px;
+	height: 300px;
+	margin: 10px;
+	margin-bottom: 50px;
+}
+
+.small-preview{
+	width: 200px;
+	height: 150px;
+	margin: 10px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #475d9e;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 10px;
+  background-color: rgb(244, 234, 215);
+  border-radius: 10px;
+  box-shadow: 5px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.center-container{
+	margin: auto;
+	width: 90%;
+}
