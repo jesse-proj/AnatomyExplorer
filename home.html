@@ -8,7 +8,8 @@
 
 	</head>
 
-<body style = 'background-color: rgb(77, 85, 94);'>
+<body style = 'background-image: linear-gradient(180deg, rgb(52 58 64) 30%, rgb(80 89 99) 50%);'>
+	<!-- linear-gradient(180deg, rgb(120 174 173) 45%, rgb(167 216 240) 50%) -->
 
 	<!-- The navbar -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -28,6 +29,9 @@
 	      <li class="nav-item">
 	        <a class="nav-link" href="#">Contacts</a>
 	      </li>
+	      <li>
+	      	<a class="nav-link" href="#">Leaderboard</a>
+	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link disabled" href="#">Achievements</a>
 	      </li>
@@ -38,23 +42,113 @@
 	  </div>
 	</nav>
 
+	<video autoplay muted loop id="home-video">
+	  <source src="home-stock-footage.mp4" type="video/mp4">
+	</video>
+
+	  <div class="col-sm-6 reveal" id = 'bio'>
+	    <div class="card bg-dark text-white">
+	      <div class="card-body">
+	        <h5 class="card-title">Special title treatment</h5>
+	        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+	        <a href="#" class="btn btn-primary">Go somewhere</a>
+	      </div>
+	    </div>
+	  </div>
+<!-- 	<div class = 'reveal bg-dark' style = 'margin-top: 30px' id = 'bio'>
+		<img class = 'big-preview' src = 'https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg' style = 'float: left;'/>
+
+		<div class = 'image-description'> 
+			<h1> Peel the body layer by layer! </h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed cursus libero. Phasellus eget dolor sed nisl rhoncus aliquet at vitae urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius tortor sed facilisis tempus. 
+			</p>
+		</div>
+	</div> -->
+
 	<div class = 'center-container'>
 
-		<div class = 'reveal' style = 'margin-top: 30px'>
-			<img class = 'big-preview' src = 'https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg' style = 'float: left;'/>
+	  <hr style = 'border-color: white; width: 70%; margin-top: 50px; margin-bottom: 30px;'/>
 
-			<div class = 'image-description'> 
-				<h1> Peel the body layer by layer! </h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed cursus libero. Phasellus eget dolor sed nisl rhoncus aliquet at vitae urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius tortor sed facilisis tempus. Curabitur interdum, ipsum vel eleifend rhoncus, turpis dui aliquet diam, vel accumsan sem arcu eget justo. Aenean felis ex, tempus sed felis et, hendrerit tempus eros. Duis tristique dui a magna pulvinar, sed pretium ipsum fringilla. Nam nec mauris tincidunt, dignissim tellus ac, dapibus massa. Curabitur interdum ante eget ex cursus, ac tristique velit consequat. Duis ornare bibendum metus venenatis sodales. Nunc sit amet posuere eros. Etiam quam ligula, lobortis in orci eget, consectetur malesuada elit.
+	  <h1 class = 'text-white reveal' style = 'text-align: center; margin-bottom: 50px;'> Track the leaderboards! </h1>
 
-				</p>
-			</div>
-			
+		<table class="table reveal bg-dark text-white">
+		  <thead>
+		    <tr>
+		      <th scope="col">#</th>
+		      <th scope="col">Username</th>
+		      <th scope="col">Time</th>
+		      <th scope="col">Score</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <th scope="row">1</th>
+		      <td>Mark</td>
+		      <td>1:02M</td>
+		      <td>52</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">2</th>
+		      <td>Jacob</td>
+		      <td>1:02M</td>
+		      <td>52</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">3</th>
+		      <td>Larry</td>
+		      <td>1:02M</td>
+		      <td>52</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">4</th>
+		      <td>Larry</td>
+		      <td>1:02M</td>
+		      <td>52</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">5</th>
+		      <td>Larry</td>
+		      <td>1:02M</td>
+		      <td>52</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">6</th>
+		      <td>Larry</td>
+		      <td>1:02M</td>
+		      <td>52</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">7</th>
+		      <td>Larry</td>
+		      <td>1:02M</td>
+		      <td>52</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">8</th>
+		      <td>Larry</td>
+		      <td>1:02M</td>
+		      <td>52</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">9</th>
+		      <td>Larry</td>
+		      <td>1:02M</td>
+		      <td>52</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">10</th>
+		      <td>Larry</td>
+		      <td>1:02M</td>
+		      <td>52</td>
+		    </tr>
+		  </tbody>
+		</table>
+
 		<div class="container my-5" style = 'clear:both'>
-			<div class="row">
+			<div class="row reveal">
 			  <div class="col-md-3">
-			    <div class="card bg-dark text-white">
+			    <div class="card bg-dark text-white" style = 'margin-top: 40px'>
 			      <img src="https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg" class="card-img-top" alt="Card image 1">
 			      <div class="card-body">
 			        <h5 class="card-title">Card 1</h5>
@@ -63,7 +157,7 @@
 			    </div>
 			  </div>
 			  <div class="col-md-3">
-			    <div class="card bg-dark text-white">
+			    <div class="card bg-dark text-white" style = 'margin-top: 10px'>
 			      <img src="https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg" class="card-img-top" alt="Card image 1">
 			      <div class="card-body">
 			        <h5 class="card-title">Card 1</h5>
@@ -72,7 +166,7 @@
 			    </div>
 			  </div>
 			  <div class="col-md-3">
-			    <div class="card bg-dark text-white">
+			    <div class="card bg-dark text-white"  style = 'margin-top: 40px'>
 			      <img src="https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg" class="card-img-top" alt="Card image 1">
 			      <div class="card-body">
 			        <h5 class="card-title">Card 1</h5>
@@ -81,7 +175,7 @@
 			    </div>
 			  </div>
 			  <div class="col-md-3">
-			    <div class="card bg-dark text-white">
+			    <div class="card bg-dark text-white" style = 'margin-top: 10px'>
 			      <img src="https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg" class="card-img-top" alt="Card image 1">
 			      <div class="card-body">
 			        <h5 class="card-title">Card 1</h5>
@@ -90,12 +184,17 @@
 			    </div>
 			  </div>
 			</div>
-		</div>
-
 		</div>
 
 		</div>
 	</div>
+
+	<footer class = 'bg-dark py-5 mt-5'>
+		<div class = 'container text-light text-center'>
+			<p class = 'display-5 mb-3'> Anatomy Explorer </p>
+			<small class = 'text-white-50'> Watermark by Jesse</small>
+		</div>
+	</footer>
 
 	<script src="script.js"></script>
 
