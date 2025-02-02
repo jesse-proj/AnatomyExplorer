@@ -8,7 +8,7 @@
 
 	</head>
 
-<body style = 'background-image: linear-gradient(180deg, rgb(52 58 64) 30%, rgb(80 89 99) 50%);'>
+<body style = 'background-image: linear-gradient(180deg, rgb(52 58 64) 30%, rgb(80 89 99) 55%);'>
 	<!-- linear-gradient(180deg, rgb(120 174 173) 45%, rgb(167 216 240) 50%) -->
 
 	<!-- The navbar -->
@@ -19,7 +19,7 @@
 	  </button>
 
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
+	    <ul class="navbar-nav ms-auto">
 	      <li class="nav-item active">
 	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 	      </li>
@@ -29,16 +29,21 @@
 	      <li class="nav-item">
 	        <a class="nav-link" href="#">Contacts</a>
 	      </li>
+	    </ul>
+	    <ul class = 'navbar-nav ml-auto'>
 	      <li>
-	      	<a class="nav-link" href="#">Leaderboard</a>
+	      	<a class="nav-link" href="#leaderboard">Leaderboard</a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link disabled" href="#">Achievements</a>
 	      </li>
 	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#game-modes">Games</a>
+	      </li>
+	      <li class="nav-item">
 	        <a class="nav-link active" href="#">Log in</a>
 	      </li>
-	    </ul>
+		</ul>
 	  </div>
 	</nav>
 
@@ -47,152 +52,173 @@
 	</video>
 
 	  <div class="col-sm-6 reveal" id = 'bio'>
-	    <div class="card bg-dark text-white">
+	    <div class="card bg-dark text-white box-shadow">
 	      <div class="card-body">
-	        <h5 class="card-title">Special title treatment</h5>
-	        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-	        <a href="#" class="btn btn-primary">Go somewhere</a>
+	      	<div class = 'row'>
+	      		<div class = 'col-sm-9'>
+	        		<h1 class="card-title">Explore the human body</h1>
+	        		<p class="card-text">Answer quizzes, peel the body layer by layer, and climb the leaderboard!</p>
+	        	</div>
+	      		<div class = 'col-sm-3'>
+	      			<a href="#game-modes" class="btn btn-primary btn-block">Check games</a>
+	        		<a href="#leaderboard" class="btn btn-primary btn-block">Check leaderboard</a>
+	      		</div>
+	        </div>
 	      </div>
 	    </div>
 	  </div>
-<!-- 	<div class = 'reveal bg-dark' style = 'margin-top: 30px' id = 'bio'>
-		<img class = 'big-preview' src = 'https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg' style = 'float: left;'/>
-
-		<div class = 'image-description'> 
-			<h1> Peel the body layer by layer! </h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed cursus libero. Phasellus eget dolor sed nisl rhoncus aliquet at vitae urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius tortor sed facilisis tempus. 
-			</p>
-		</div>
-	</div> -->
 
 	<div class = 'center-container'>
 
 	  <hr style = 'border-color: white; width: 70%; margin-top: 50px; margin-bottom: 30px;'/>
 
-	  <h1 class = 'text-white reveal' style = 'text-align: center; margin-bottom: 50px;'> Track the leaderboards! </h1>
+	  <section id = 'game-modes'>
+		  <h1 class = 'text-white reveal' style = 'text-align: center; margin-bottom: 50px; text-shadow: 3px 3px rgb(0, 0, 0);'> Different game modes! </h1>
 
-		<table class="table reveal bg-dark text-white">
-		  <thead>
-		    <tr>
-		      <th scope="col">#</th>
-		      <th scope="col">Username</th>
-		      <th scope="col">Time</th>
-		      <th scope="col">Score</th>
-		    </tr>
-		  </thead>
-		  <tbody>
-		    <tr>
-		      <th scope="row">1</th>
-		      <td>Mark</td>
-		      <td>1:02M</td>
-		      <td>52</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">2</th>
-		      <td>Jacob</td>
-		      <td>1:02M</td>
-		      <td>52</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">3</th>
-		      <td>Larry</td>
-		      <td>1:02M</td>
-		      <td>52</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">4</th>
-		      <td>Larry</td>
-		      <td>1:02M</td>
-		      <td>52</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">5</th>
-		      <td>Larry</td>
-		      <td>1:02M</td>
-		      <td>52</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">6</th>
-		      <td>Larry</td>
-		      <td>1:02M</td>
-		      <td>52</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">7</th>
-		      <td>Larry</td>
-		      <td>1:02M</td>
-		      <td>52</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">8</th>
-		      <td>Larry</td>
-		      <td>1:02M</td>
-		      <td>52</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">9</th>
-		      <td>Larry</td>
-		      <td>1:02M</td>
-		      <td>52</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">10</th>
-		      <td>Larry</td>
-		      <td>1:02M</td>
-		      <td>52</td>
-		    </tr>
-		  </tbody>
-		</table>
+			<div class="container my-5" style = 'clear:both'>
+				<div class="row reveal">
+				  <div class="col-md-3">
 
-		<div class="container my-5" style = 'clear:both'>
-			<div class="row reveal">
-			  <div class="col-md-3">
-			    <div class="card bg-dark text-white" style = 'margin-top: 40px'>
-			      <img src="https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg" class="card-img-top" alt="Card image 1">
-			      <div class="card-body">
-			        <h5 class="card-title">Card 1</h5>
-			        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col-md-3">
-			    <div class="card bg-dark text-white" style = 'margin-top: 10px'>
-			      <img src="https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg" class="card-img-top" alt="Card image 1">
-			      <div class="card-body">
-			        <h5 class="card-title">Card 1</h5>
-			        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col-md-3">
-			    <div class="card bg-dark text-white"  style = 'margin-top: 40px'>
-			      <img src="https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg" class="card-img-top" alt="Card image 1">
-			      <div class="card-body">
-			        <h5 class="card-title">Card 1</h5>
-			        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col-md-3">
-			    <div class="card bg-dark text-white" style = 'margin-top: 10px'>
-			      <img src="https://i.pinimg.com/736x/ff/4f/73/ff4f732c09760aa68dc76b06fa80d541.jpg" class="card-img-top" alt="Card image 1">
-			      <div class="card-body">
-			        <h5 class="card-title">Card 1</h5>
-			        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			      </div>
-			    </div>
-			  </div>
+				  	<a href = 'temp.html'>
+					    <div class="card bg-dark text-white box-shadow" style = 'margin-top: 40px;;'>
+					      <img src="interactive-layers.png" class="card-img-top" alt="Card image 1">
+					      <div class="card-body" style = 'text-align: center;'>
+					        <h5 class="card-title">Interactive Layers</h5>
+					        <p class="card-text">Peel through the body's layers and uncover information about different bodily organs and systems.</p>
+					      </div>
+					    </div>
+					</a>
+
+				  </div>
+				  <div class="col-md-3">
+
+				  	<a href = 'temp.html'>
+					    <div class="card bg-dark text-white box-shadow" style = 'margin-top: 20px;;'>
+					      <img src="temp.png" alt="Card image 1">
+					      <div class="card-body" style = 'text-align: center;'>
+					        <h5 class="card-title"> Timed Quizzes </h5>
+					        <p class="card-text"> Answer quizzes with a timer. Try to get the highest possible score within the time given to you!</p>
+					      </div>
+					    </div>
+					</a>
+
+				  </div>
+				  <div class="col-md-3">
+
+				  	<a href = 'temp.html'>
+					    <div class="card bg-dark text-white box-shadow"  style = 'margin-top:60px'>
+					      <img src="quiz-mode.png" class="card-img-top" alt="Card image 1">
+					      <div class="card-body" style = 'text-align: center;'>
+					        <h5 class="card-title">Challenge Mode</h5>
+					        <p class="card-text">Timed quizzes but ranked! Flex your high scores and best times in the leaderboard.</p>
+					      </div>
+					    </div>
+					</a>
+
+				  </div>
+				  <div class="col-md-3">
+
+				  	<a href = 'temp.html'>
+					    <div class="card bg-dark text-white box-shadow" style = 'margin-top: 30px'>
+					      <img src="temp.png" alt="Card image 1">
+					      <div class="card-body" style = 'text-align: center;'>
+					        <h5 class="card-title">Scenario Challenges</h5>
+					        <p class="card-text">Given a scenario, you are tasked to answer the best possible action. Choose wisely or else you might lose your medical license!</p>
+					      </div>
+					    </div>
+					</a>
+				  </div>
+				</div>
 			</div>
-		</div>
+		</section>
 
-		</div>
+		<!-- </div> -->
+
+		<section id = 'leaderboard'>
+			<div class = 'separator reveal'>
+		  		<h1 class = 'text-white' style = 'text-align: center; margin-bottom: 50px; text-shadow: 3px 3px rgb(0, 0, 0);'> Climb the leaderboard! </h1>
+		  	</div>
+
+			<table class="table bg-dark text-white box-shadow" style = 'border-radius: 5px;'>
+			  <thead class = 'reveal'>
+			    <tr>
+			      <th scope="col">#</th>
+			      <th scope="col">Username</th>
+			      <th scope="col">Time</th>
+			      <th scope="col">Score</th>
+			    </tr>
+			  </thead>
+			  <tbody class = 'reveal'>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td>Mark</td>
+			      <td>1:02M</td>
+			      <td>52</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td>Jacob</td>
+			      <td>1:02M</td>
+			      <td>52</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td>Larry</td>
+			      <td>1:02M</td>
+			      <td>52</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">4</th>
+			      <td>Larry</td>
+			      <td>1:02M</td>
+			      <td>52</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">5</th>
+			      <td>Larry</td>
+			      <td>1:02M</td>
+			      <td>52</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">6</th>
+			      <td>Larry</td>
+			      <td>1:02M</td>
+			      <td>52</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">7</th>
+			      <td>Larry</td>
+			      <td>1:02M</td>
+			      <td>52</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">8</th>
+			      <td>Larry</td>
+			      <td>1:02M</td>
+			      <td>52</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">9</th>
+			      <td>Larry</td>
+			      <td>1:02M</td>
+			      <td>52</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">10</th>
+			      <td>Larry</td>
+			      <td>1:02M</td>
+			      <td>52</td>
+			    </tr>
+			  </tbody>
+			</table>
+		</section>
+
 	</div>
 
 	<footer class = 'bg-dark py-5 mt-5'>
 		<div class = 'container text-light text-center'>
 			<p class = 'display-5 mb-3'> Anatomy Explorer </p>
-			<small class = 'text-white-50'> Watermark by Jesse</small>
+			<small class = 'text-white-50'> 2025</small>
 		</div>
 	</footer>
 
